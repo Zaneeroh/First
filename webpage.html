@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Webpage</title>
+
+    <style>
+      * {
+        margin: 0%;
+      }
+
+      a {
+        color: green;
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div style="background-color: green; padding: 30px; text-align: center">
+        <h1 style="color: white">My First Webpage</h1>
+      </div>
+      <br />
+
+      <div>
+        <a href="#web-contents">Webpage Contents</a>
+
+        <a href="#information-table">Information Table</a>
+
+        <a href="#contact-form">Contact Form</a>
+      </div>
+      <br />
+
+      <div>
+        <img
+          src="/images/sunset.jpg"
+          alt="A Beautiful Sunset"
+          height="300"
+          width="600"
+        />
+      </div>
+
+      <div id="paragraph">
+        <p>
+          This is a sample paragraph describing the content of the webpage. It
+          explains the purpose of <br />the page, and provides some basic
+          information about what users can expect to find.<br />
+        </p>
+      </div>
+      <br />
+
+      <div>
+        <a href="hhtps://www.techyjaunt.com/" target="_blank"
+          >Visit Techyjaunt</a
+        >
+      </div>
+
+      <br /><br />
+
+      <!-- Web Contents Section -->
+      <div id="web-contents">
+        <h2>Webpage Contents</h2>
+        <br />
+        <ul>
+          <li>Introductions</li>
+          <li>Table of Contents</li>
+          <li>Contact Form</li>
+        </ul>
+      </div>
+      <!-- End of Web Contents Section -->
+      <br />
+
+      <div id="information-table">
+        <h2>Information Table</h2>
+        <br>
+        <table border="1" cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Decription</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Pens</td>
+              <td>Blue Ink Pens</td>
+              <td>5</td>
+            </tr>
+
+            <tr>
+              <td>Notebooks</td>
+              <td>Spiral bound Notebooks</td>
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td>Markers</td>
+              <td>Permanent Markers</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="contact-form">
+          <h2>Contact Form</h2>
+
+          <form>
+                <div>
+                  <label>Name:</label>
+                  <input type="text" name="name">
+                </div>
+                <br>
+               
+                <div>
+                  <label>Email:</label>
+                  <input type="email" name="email">
+                </div>
+                <br>
+
+                <div>
+                  <label>Password:</label>
+                  <input type="password" name="password">
+                </div>
+                <br>
+
+                <div>
+                  <label>Gender:</label>
+
+                  <input type="radio" id="male" name="radio" value="male">
+                  <label for="male">Male</label>
+
+                  <input type="radio" id="female" name="gender" value="female" />
+                  <label for="female">Female</label><br />
+                </div>
+                <br>
+
+                <div>
+                  <label for="subscribe">Subscribe:</label>
+                  <input type="checkbox" id="subscribe" name="subscribe">
+                  Yes, I want to subscribe.
+                </div>
+                <br>
+
+                <div>
+                  <label>Number of items:</label>
+                  <input type="number" min="100" max="500000000">
+                </div>
+                <br>
+
+                <div>
+                  <label>Date:</label>
+                  <input type="date">
+                </div>
+                <br>
+
+                <div>
+                  <label for="message">Message:</label>
+                  <br>
+                  <textarea id="message" name="message" rows="6" cols="50" placeholder="Enter your
+                  message"></textarea><br>
+                </div>
+                <br>
+
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
+          </form>
+      </div>
+    </div>
+
+  </body>
+</html>
